@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/home.scss";
-
+import Project from "./Projects";
 function Home() {
-  const [projects, setProjects] = useState();
   return (
     <section className="home-section">
       <div className="welcome">
@@ -14,7 +13,9 @@ function Home() {
 
       <main className="main">
         <h1>Some of my projects:</h1>
-        <div className="projects-div">{}</div>
+        <div className="projects-div">
+          <Project />
+        </div>
       </main>
     </section>
   );
