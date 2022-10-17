@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  .git-icon {
+    color: white;
+    font-size: 2rem;
+    transition: ease-in-out 0.2s;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .git-icon:hover {
+    color: rgb(83, 3, 121);
+  }
+}
