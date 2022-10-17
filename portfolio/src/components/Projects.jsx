@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "./data/projtects-data";
-
+import "./styles/home.scss";
 export default function Project() {
   const [projects, setProjects] = useState(data);
 

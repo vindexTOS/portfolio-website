@@ -14,7 +14,7 @@ $font-color: orange;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  height: 100vh;
+  height: 100%;
 
   .welcome {
     width: 80%;
@@ -30,12 +30,38 @@ $font-color: orange;
     }
   }
   .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 2rem;
+    width: 100%;
     h1 {
       font-family: "Josefin Slab", serif;
       color: $font-color;
       font-weight: 900;
       font-size: 2rem;
     }
+  }
+  .projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+}
+.single-project {
+  display: grid;
+  justify-items: center;
+  width: 90%;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 10px;
+  img {
+    width: 96%;
+    height: 100%;
+    border: 1px solid orange;
+    border-radius: 20px;
   }
 }
