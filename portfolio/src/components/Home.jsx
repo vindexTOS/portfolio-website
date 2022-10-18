@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/home.scss";
 import Project from "./Projects";
+import Animation from "./styles/animations/Home.animation";
 function Home() {
   return (
     <section className="home-section">
@@ -9,6 +10,7 @@ function Home() {
         <h1>
           Hello,My name is Giorgi and I am A <span>React</span> Developer
         </h1>
+        <Animation />
       </div>
 
       <main className="main">
