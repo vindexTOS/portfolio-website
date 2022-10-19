@@ -13,8 +13,9 @@ $font-color: orange;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
-  height: 100vh;
+  margin-top: 5rem;
+
+  height: 100%;
 
   .welcome {
     width: 80%;
@@ -27,6 +28,7 @@ $font-color: orange;
     border-top-right-radius: 20%;
 
     .welcome-header {
+      z-index: 3;
       font-family: "Chakra Petch", sans-serif;
       color: $font-color;
       font-size: 4rem;
@@ -44,6 +46,36 @@ $font-color: orange;
     @media screen and (max-width: 670px) {
       .welcome-header {
         font-size: 1.5rem;
+      }
+    }
+  }
+  .skills {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(154, 9, 190, 0.178);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 20%;
+    margin-top: 2rem;
+    justify-content: end;
+    .list-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 3rem;
+        color: orange;
+      }
+      ul li {
+        list-style: none;
+        font-size: 2rem;
+        color: orange;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
     }
   }

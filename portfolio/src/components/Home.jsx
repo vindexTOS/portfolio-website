@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles/home.scss";
 import Project from "./Projects";
 import Animation from "./styles/animations/Home.animation";
-
+import Skill from "./styles/animations/Skills.animation.component";
 function Home() {
   return (
     <section className="home-section">
@@ -13,7 +13,18 @@ function Home() {
         </h1>
         <Animation />
       </div>
-
+      <div className="skills">
+        <Skill />
+        <div className="list-div">
+          <h1>Skills</h1>
+          <ul>
+            <li>skill</li>
+            <li>skill</li>
+            <li>skill</li>
+            <li>skill</li>
+          </ul>
+        </div>
+      </div>
       <main className="main">
         <h1>Some of my projects:</h1>
         <div className="projects-div">
