@@ -14,5 +14,5 @@ export default function HomeAnimation() {
     });
     return () => instance.destroy();
   }, []);
-  return <div ref={container}></div>;
+  return <div style={{ width: "40rem" }} ref={container}></div>;
 }

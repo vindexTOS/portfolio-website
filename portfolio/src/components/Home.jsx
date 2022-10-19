@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import "./styles/home.scss";
 import Project from "./Projects";
 import Animation from "./styles/animations/Home.animation";
+
 function Home() {
   return (
     <section className="home-section">
       <div className="welcome">
-        <h1>
+        <h1 className="welcome-header">
           Hello,My name is Giorgi and I am A <span>React</span> Developer
         </h1>
         <Animation />
