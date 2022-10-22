@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,14 +27,19 @@ $font-color: orange;
     border-bottom-right-radius: 20%;
     border-top-left-radius: 30%;
     border-top-right-radius: 20%;
-
+    .hello {
+      display: flex;
+      flex-direction: column;
+    }
     .welcome-header {
       z-index: 3;
+      margin-left: 8rem;
       font-family: "Chakra Petch", sans-serif;
       color: $font-color;
       font-size: 4rem;
       text-align: center;
       margin-top: 3rem;
+
       span {
         color: aqua;
       }
@@ -60,22 +66,36 @@ $font-color: orange;
     border-top-right-radius: 20%;
     margin-top: 2rem;
     justify-content: end;
+
     .list-div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      margin-right: 4rem;
+      text-align: start;
+      width: 100%;
 
       h1 {
         font-size: 3rem;
-        color: orange;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        color: aqua;
+        font-family: "Chakra Petch", sans-serif;
+        text-align: start;
+        text-shadow: 2px 2px #000000;
+      }
+      ul {
+        margin-top: 30px;
       }
       ul li {
         list-style: none;
-        font-size: 2rem;
+        font-size: 3.2rem;
+        margin-top: 26px;
+        margin-bottom: 26px;
         color: orange;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: start;
+        font-family: "Chakra Petch", sans-serif;
+        text-shadow: 2px 2px #000000;
       }
     }
   }
@@ -96,26 +116,29 @@ $font-color: orange;
   }
 }
 .projects-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 80%;
-  border: 2px solid white;
-  border-radius: 10px;
+  background-color: rgba(156, 6, 194, 0.281);
+  border-radius: 10% 33% 12% 20%;
 }
 
-.single-project {
-  display: grid;
-  justify-items: center;
-  width: 90%;
-  border: 2px solid red;
-  border-radius: 20px;
-  margin: 10px;
-  img {
-    width: 96%;
-    height: 100%;
-    border: 1px solid orange;
-    border-radius: 20px;
-  }
+.arrow-btn {
+  font-size: 400%;
+
+  margin: 4rem;
+
+  color: orange;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.arrow-btn:hover {
+  color: aqua;
+  border-radius: 100px;
+
+  background-color: black;
 }
 
 //Bubbles CSS //
